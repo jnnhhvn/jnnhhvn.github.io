@@ -4,19 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Log and Sign Up</title>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
     <div class="container">
-      <form action="" method="get">
+      <form onsubmit="auth(event)">
+        <h1>Login to FEU</h1>
         <div class="form-group">
-          <input type="text" name="" id="" placeholder="Enter username" />
+          <input type="email" name="Email" id="email" placeholder="Email" required/>
         </div>
         <div class="form-group">
-          <input type="password" name="" id="" placeholder="Enter password..." />
+          <input type="password" name="Password" id="password" placeholder="Password" required/>
         </div>
-        <div class="form-group"><button type="submit">Sign In</button></div>
+        <button type="submit" class="btn">Login</button>
+        <div class="forgot-sign">
+          <a href="#" onclick="forgotPassword()">Forgot password?</a>
+          <a href="#" onclick="signUp()">Sign up an account for FEU</a>
+        </div>
       </form>
     </div>
+
+    <script>
+      function auth(event) {
+          event.preventDefault(); 
+          const email = document.getElementById('email').value;
+          const password = document.getElementById('password').value;
+
+          if (email === '202312070@fit.edu.ph' && password === '202312070') {
+              alert("Login successful. Welcome to FEU!");
+          } else {
+              alert("Login failed. Invalid information.");
+          }
+      }
+
+      function forgotPassword() {
+          const email = prompt("Please enter your email address:");
+          if (email) {
+              alert(`A password reset link has been sent to ${email}`);
+          } else {
+              alert("Email address is required to reset password.");
+          }
+      }
+
+      function signUp() {
+            alert("You will be redirected to the Student Central of FEU in a while.");
+        }
+    </script>
   </body>
 </html>
