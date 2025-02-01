@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jannah Hilario Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">  <div class="resume-container" id="resumeContainer">
+            <div class="header">
+                <div class="info">
+                    <h1>Jannah Hilario</h1>
+                    <p>Address: Lot 11 Blk 5F Kaunlaran Village, Caloocan City</p>
+                    <p>Contact: +639 341 4161</p>
+                    <p>Email: jnnhhvn05@gmail.com</p>
+                </div>
+                <div class="image">
+                    <img id="Picture" src="HILARIO_Picture.jpg" alt="Picture">
+                </div>
+            </div>
+            <section class="education">
+                <h2>EDUCATION</h2>
+                <ul>
+                    <li>
+                        <strong>International Philippine School in Riyadh</strong><br>
+                        2010-2014 [Riyadh, Saudi Arabia]<br>
+                        Preparatory - Elementary
+                    </li>
+                    <li>
+                        <strong>International Philippine School in Jeddah</strong><br>
+                        2014-2021 [Jeddah, Saudi Arabia]<br>
+                        Elementary - Junior High School
+                    </li>
+                    <li>
+                        <strong>Far Eastern University High School</strong><br>
+                        2021-2023 [Sampaloc, Manila]<br>
+                        Senior High School | STEM
+                    </li>
+                    <li>
+                        <strong>FEU Institute of Technology</strong><br>
+                        2023-Present [Sampaloc, Manila]<br>
+                        College-Undergraduate | BS Information Technology
+                    </li>
+                </ul>
+            </section>
+            <section class="work-experience">
+                <h2>WORK EXPERIENCE & SKILLS</h2>
+                <ul>
+                    <li><strong>Freelance Photographer</strong><br>2023 - Present</li>
+                    <li><strong>CSS</strong><br>2023 - Present</li>
+                    <li><strong>HTML</strong><br>2023 - Present</li>
+                    <li><strong>Javascript</strong><br>2023 - Present</li>
+                </ul>
+            </section>
+            <button id="button">Change Color</button>
+        </div>
+    </div>  <script>
+        const resumeContainer = document.getElementById("resumeContainer");
+        const colorChangeBtn = document.getElementById("button");
+
+        colorChangeBtn.addEventListener("click", function() {
+            resumeContainer.classList.toggle("changed");
+        });
+    </script>
+</body>
+</html>
