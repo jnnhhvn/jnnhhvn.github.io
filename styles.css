@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.left-container {
+    margin-right: 200px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.day-button {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: transform 0.5s ease, opacity 0.9s ease;
+    text-align: center;
+    width: 150px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.day-button:nth-child(7) { background-color: #7B1FA2; } 
+.day-button:nth-child(6) { background-color: #F48FB1; } 
+.day-button:nth-child(5) { background-color: #1976D2; } 
+.day-button:nth-child(4) { background-color: #388E3C; } 
+.day-button:nth-child(3) { background-color: #FBC02D; }
+.day-button:nth-child(2) { background-color: #E65100; } 
+.day-button:nth-child(1) { background-color: #D32F2F; }
+
+.day-button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.box-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 8px solid transparent;
+    border-radius: 25px;
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease, border-color 1s ease, background-color 1s ease;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box-red { border-color: red; background-color: rgba(255, 0, 0, 0.15); }
+.box-orange { border-color: orange; background-color: rgba(255, 165, 0, 0.15); }
+.box-yellow { border-color: yellow; background-color: rgba(255, 255, 0, 0.15); }
+.box-green { border-color: green; background-color: rgba(0, 128, 0, 0.15); }
+.box-blue { border-color: blue; background-color: rgba(0, 0, 255, 0.15); }
+.box-indigo { border-color: indigo; background-color: rgba(75, 0, 130, 0.15); }
+.box-violet { border-color: violet; background-color: rgba(238, 130, 238, 0.15); }
+
+.active {
+    transform: translateY(50px);
+    opacity: 1;
+}
