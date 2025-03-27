@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebang Halo-Halo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <span class="course-code">IT0063</span>
+            <span class="producer">Produced by: Jannah Hilario</span>
+        </div>
+    </header>
+    
+    <div class="menu-container">
+        <div class="card" data-menu="presidential">
+            <img src="ube.jpg" alt="Presidential Halo-Halo">
+            <div class="hover-box">Just Ube-lieve it!</div>
+            <div class="food-label">
+                <span class="food-text">Presidential Halo-Halo</span>
+            </div>
+        </div>
+        <div class="card" data-menu="mango">
+            <img src="mango.jpg" alt="Mango Graham Halo-Halo">
+            <div class="hover-box">Let's Mango-go-go!</div>
+            <div class="food-label">
+                <span class="food-text">Mango Graham Halo-Halo</span>
+            </div>
+        </div>
+        <div class="card" data-menu="matcha">
+            <img src="matcha.jpg" alt="Matcha Halo-Halo">
+            <div class="hover-box">Promise Matcha-rap 'to!</div>
+            <div class="food-label">
+                <span class="food-text">Matcha Halo-Halo</span>
+            </div>
+        </div>
+        <div class="card" data-menu="strawberry">
+            <img src="strawberry.jpg" alt="Strawberry Halo-Halo">
+            <div class="hover-box">Strawberry Good!</div>
+            <div class="food-label">
+                <span class="food-text">Strawberry Halo-Halo</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <button class="close-btn">Main Menu</button>
+            <div class="popup-body">
+                <img id="popup-image" src="" alt="Food Image">
+                <div class="popup-text">
+                    <h2 id="popup-title"></h2>
+                    <p id="popup-description"></p>
+                    <p id="popup-ingredients" class="ingredients"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
