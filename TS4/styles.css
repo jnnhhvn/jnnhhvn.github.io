@@ -176,6 +176,7 @@ body {
         width: 95%;
         max-width: 300px;
         padding: 20px;
+        right: 40px;
     }
 
     .popup-body {
