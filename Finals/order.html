@@ -20,19 +20,19 @@
         <div class="row justify-content-center mt-4">
             <div class="col-lg-6">
                 <!-- Seamless Order Review Card -->
-                <div class="product-card" id="order-card">
-                    <div class="product-img">
-                        <img id="order-img" src="" class="main-img img-fluid rounded" alt="Product Image">
+                <div class="review-card" id="review-card">
+                    <div class="review-img">
+                        <img id="review-img" src="" class="main-img img-fluid rounded" alt="Product Image">
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title" id="order-name"></h5>
-                        <p class="price" id="order-price"></p>
-                        <p class="card-text"><strong>Inclusions:</strong> <span id="order-inclusions"></span></p>
+                    <div class="review-card-body">
+                        <h5 class="review-card-title" id="review-name"></h5>
+                        <p class="review-price" id="review-price"></p>
+                        <p class="review-card-text"><strong>Inclusions:</strong> <span id="review-inclusions"></span></p>
                         <div class="d-flex align-items-center justify-content-center">
-                            <label for="quantity" class="me-2">Quantity:</label>
-                            <input type="number" id="order-quantity" class="form-control w-25 text-center" value="1" min="1">
+                            <label for="review-quantity" class="me-2">Quantity:</label>
+                            <input type="number" id="review-quantity" class="form-control w-25 text-center" value="1" min="1">
                         </div>
-                        <button class="order-confirm mt-3" id="confirm-order">Add To Cart</button>
+                        <button class="review-confirm mt-3" id="confirm-review">Add To Cart</button>
                     </div>
                 </div>
             </div>
@@ -40,7 +40,7 @@
     </div>
 
     <!-- Pop-up Notification -->
-    <div id="popup" class="popup">
+    <div id="review-popup" class="review-popup">
         <i class="fas fa-check-circle"></i>
         <span>Item added to cart!</span>
     </div>
