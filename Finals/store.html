@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store - All Products</title>
+    <title>Store</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -16,7 +16,7 @@
 
     <!-- Main Content -->
     <div class="container mt-5 text-center">
-        <h2 class="section-title">All Products</h2>
+        <h2 class="section-title">Pokemon Go Store</h2>
 
         <!-- Category Buttons -->
         <div class="category-buttons">
@@ -38,53 +38,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 
-    <!-- Product Generation Script -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const products = [
-                { name: "Fuzzy Buddy Ultra Ticket Box", price: "₱59.00", img: "box1.png", hoverImg: "box1.1.png" },
-                { name: "Bug Out Ultra Ticket Box", price: "₱59.00", img: "box2.png", hoverImg: "box2.1.png" },
-                { name: "GO Rocket Box", price: "₱289.00", img: "box3.png", hoverImg: "box3.1.png" },
-                { name: "Ultra Raid Box", price: "₱149.00", img: "box4.png", hoverImg: "box4.1.png" },
-                { name: "Might and Mastery Box", price: "₱149.00", img: "box5.png", hoverImg: "box5.1.png" },
-                { name: "Super Incubator", price: "₱88.00", img: "super_incubator.png", hoverImg: "super_incubator.png"},
-                { name: "Egg Incubator", price: "₱88.00", img: "egg_incubator.png", hoverImg: "egg_incubator.png" },
-                { name: "Max Revive", price: "₱59.00", img: "max_revive.png", hoverImg: "max_revive.png" },
-                { name: "Premium Battle Pass", price: "₱88.00", img: "premiumbp.png", hoverImg: "premiumbp.png" },
-                { name: "Max Particle Pack x6", price: "₱235.00", img: "max_particle.png", hoverImg: "max_particle.png" },
-                { name: "Max Mushroom", price: "₱289.00", img: "max_mushroom.png", hoverImg: "max_mushroom.png" },
-                { name: "110 PokéCoins", price: "₱29.00", img: "coins1.png", hoverImg: "coins1.png" },
-                { name: "600 PokéCoins", price: "₱149.00", img: "coins2.png", hoverImg: "coins2.png" },
-                { name: "1,300 PokéCoins", price: "₱289.00", img: "coins3.png", hoverImg: "coins3.png" },
-                { name: "2,700 PokéCoins", price: "₱589.00", img: "coins4.png", hoverImg: "coins4.png" },
-                { name: "5,600 PokéCoins", price: "₱1,170.00", img: "coins5.png", hoverImg: "coins5.png" },
-                { name: "15,500 PokéCoins", price: "₱2,950.00", img: "coins6.png", hoverImg: "coins6.png"},
-                { name: "Weekly Adventure Bundle", price: "₱289.00", img: "daily2.png", hoverImg: "daily2.1.png" },
-                { name: "Monthly Special Pack", price: "₱289.00", img: "daily3.png", hoverImg: "daily3.1.png" },
-                { name: "Limited-Time Raid Bundle", price: "₱289.00", img: "daily4.png", hoverImg: "daily4.1.png" },
-            ];
-
-            let productHTML = "";
-            products.forEach(product => {
-                productHTML += `
-                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                        <div class="card product-card">
-                            <div class="product-img">
-                                <img src="./assets/items/${product.img}" class="main-img" alt="${product.name}" onerror="this.src='./assets/items/placeholder.png';">
-                                <img src="./assets/items/${product.hoverImg}" class="hover-img" alt="${product.name} Inclusions" onerror="this.src='./assets/items/placeholder.png';">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">${product.name}</h5>
-                                <p class="card-text price">${product.price}</p>
-                                <a href="order.html" class="btn add-to-cart">Add to Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            });
-
-            document.getElementById("product-grid").innerHTML = productHTML;
-        });
-    </script>
 </body>
 </html>
