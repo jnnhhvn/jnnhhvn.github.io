@@ -71,8 +71,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("checkoutModal").setAttribute("aria-hidden", "true");
         document.body.classList.remove("modal-open");
 
-        // Reload page after 1.5 seconds for a smooth transition
-        setTimeout(() => location.reload(), 3000);
+        // Reload page after 2 seconds for a smooth transition
+        setTimeout(() => location.reload(), 2000);
     });
 
     // Checkout Success Pop-up Function
